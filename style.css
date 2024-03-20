@@ -6,23 +6,24 @@
     font-size: 20px;
 }
 body{
-    background-color: #fff;
+    background-color: antiquewhite;
 }
 header{
-    background-color: antiquewhite;
+    background-color: #fff;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+    height: 100px;
+    padding: 10px 10%;
 }
 header .logo{
     cursor: pointer;
     margin-right: auto;
 }
-.header .logo img{
-    height: 70px;
+header .logo img{
+    height: 90px;
     width: auto;
+    vertical-align: middle;
     transition: all 0.3s;
 }
 header .logo img:hover{
