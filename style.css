@@ -319,12 +319,12 @@ p.textdoc {
     width: -webkit-fill-available;
   }
   .keyboard{
-    max-width: 79% !important;
-    left: 3% !important;
+    max-width: 85% !important;
+    left: 4% !important;
     top: 35% !important;
   }
   .row{
-    max-width: 35% !important;
+    max-width: 99% !important;
     height: 54px !important;
   }
   kbd{
