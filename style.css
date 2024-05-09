@@ -129,7 +129,7 @@ kbd[data-key=enter]::before {
 kbd[data-key=enter] {
   width: 90px;
 }
-@media only screen and (min-width: 608px){
+
   #sidebar {
     position: fixed;
     top: 1rem;
@@ -157,7 +157,7 @@ kbd[data-key=enter] {
   #sidebar.active {
     right: 40px;
   }
-}
+
 
 .postit {
   font-size: .9em;
@@ -304,12 +304,7 @@ p.textdoc {
 }
 
 @media only screen and (max-width: 408px){
-  .container {
-    position: absolute;
-    top: 14%;
-    left: 10% !important;
-    height: min-content;
-  }
+  
   .document {
     background-color: #fff;
     position: absolute;
@@ -332,7 +327,7 @@ p.textdoc {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: -40rem;
+    top: -2rem;
     left: 4rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
@@ -349,6 +344,6 @@ p.textdoc {
     width: 20px;
   }
   #sidebar.active {
-    top: 40rem;
+    top: 2rem;
   }
 }
