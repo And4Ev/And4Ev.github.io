@@ -304,8 +304,9 @@ p.textdoc {
 }
 
 @media only screen and (max-width: 600px){
+  
   .container {
-    position: absolute;
+    position: relative;
     min-height: 100vh;
     width: auto;
   }
@@ -331,8 +332,8 @@ p.textdoc {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: -40rem;
-    left: 4rem;
+    top: -1rem;
+    left: 1rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
@@ -348,7 +349,7 @@ p.textdoc {
     width: 20px;
   }
   #sidebar.active {
-    top: 40rem;
+    top: 1rem;
   }
   .boxes img{
     width: 350px;
