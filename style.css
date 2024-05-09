@@ -305,8 +305,9 @@ p.textdoc {
 
 @media only screen and (max-width: 600px){
   .container {
-    box-sizing: border-box;
-    
+    position: absolute;
+    min-height: 100vh;
+    width: auto;
   }
   .document {
     background-color: #fff;
