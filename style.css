@@ -310,18 +310,14 @@ p.textdoc {
 /*----responsive mobile---*/
 @media only screen and (max-width: 600px){
   body{
-    min-height: 100vh;
-    width: auto;
+    position: relative;
   }
   .container {
     margin-top: 3rem;
     margin-left: -15px;
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: min-content;
-    justify-content: flex-start;
+    min-height: 80vh;
+    width: auto;
   }
   .keyboard{
     margin-left: -30px;
@@ -331,7 +327,7 @@ p.textdoc {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: -2rem;
+    top: -5rem;
     left: 7rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
