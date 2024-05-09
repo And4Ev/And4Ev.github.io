@@ -309,15 +309,10 @@ p.textdoc {
 
 /*----responsive mobile---*/
 @media only screen and (max-width: 600px){
-  body{
-    position: relative;
-  }
   .container {
     margin-top: 3rem;
     margin-left: -15px;
     position: absolute;
-    min-height: 80vh;
-    width: auto;
   }
   .keyboard{
     margin-left: -30px;
