@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
   background-color: #111;
@@ -16,7 +17,6 @@ body {
   height: 90%;
   color: #999;
 }
-
 .keyboard {
   position: absolute;
   top: 32%;
@@ -159,7 +159,6 @@ kbd[data-key=enter] {
   }
 }
 
-
 .postit {
   font-size: .9em;
   position: absolute;
@@ -215,24 +214,32 @@ p.textdoc {
 .content-cv {
   text-align: center;
 }
-
+.content-cv h1 {
+  margin-top: 2rem;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
 .content-cv p {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
   color: #999;
 }
-
-.content-cv h2 {
+.title-projects h1{
+  margin-top: 2rem;
+  text-align: center;
   color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
 }
-
 .boxes {
-  margin: 1rem 5rem 4rem 2rem;
+  margin: 4rem 5rem 4rem 4rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .boxes:hover> :not(:hover) {
@@ -240,52 +247,34 @@ p.textdoc {
 }
 
 .box {
-  flex: 1 1 200px;
   transition: opacity 0.6s ease;
 }
 
 .box.uno img {
-  width: 500px;
+  width: 400px;
   height: 250px;
 }
 
 .box.dos img {
-  width: 500px;
+  width: 400px;
   height: 250px;
 }
 
 .box.tres img {
-  width: 500px;
+  width: 400px;
   height: 250px;
 }
 
 .box.cuatro img {
-  width: 500px;
+  width: 400px;
   height: 250px;
 }
-
-.uno p,
-.tres p,
-.cuatro p {
-  color: #fff;
+.text p{
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  color: #999;
   text-align: center;
-  font-family: 'Open Sans Condensed';
-  margin-top: 5rem;
-}
-
-.dos p {
-  color: #110c98;
-  text-align: center;
-  margin-top: 5rem;
-  font-family: 'Open Sans Condensed';
-}
-
-.title-projects {
-  margin-top: 4rem;
-  text-align: center;
-  color: #fff;
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 2rem;
 }
 /* tooltips sidebar*/
 .icono {
@@ -304,8 +293,9 @@ p.textdoc {
   padding: 7px;
   width: max-content;
   background: #e9e8e6;
-  font-family: 'Reenie Beanie';
-  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: .7rem;
   text-align: center;
   border-radius: 8px;
 }
