@@ -318,24 +318,29 @@ p.textdoc {
     width: -webkit-fill-available;
   }
   .keyboard{
-    max-width: 50% !important;
-    left: 2% !important;
+    max-width: 79% !important;
+    left: 3% !important;
+    top: 35% !important;
   }
   .row{
     max-width: 35% !important;
-    height: 47px !important;
+    height: 54px !important;
   }
   kbd{
-    font-size: 1.2rem !important;
-    height: 47px !important;
+    font-size: 1.3rem !important;
+    height: 54px !important;
+  }
+  kbd[data-key=enter] {
+    width: 95px !important;
+    font-size: 2rem !important;
   }
   .toppage.document {
-    max-width: 50% !important;
+    max-width: 62% !important;
     max-height: 70% !important;
-    ;
+    
   }
   .hidden.document {
-    max-width: 50% !important;
+    max-width: 620% !important;
     max-height: 70% !important;
     
   }
@@ -367,7 +372,7 @@ p.textdoc {
   }
   #sidebar.active {
     top: 1rem;
-    left: 2rem;
+    left: 3rem;
   }
   .title-projects h1{
     margin-top: 7rem !important;
