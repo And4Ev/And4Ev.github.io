@@ -336,12 +336,12 @@ p.textdoc {
   }
   .toppage.document {
     max-width: 62% !important;
-    max-height: 70% !important;
+    max-height: 72% !important;
     
   }
   .hidden.document {
-    max-width: 620% !important;
-    max-height: 70% !important;
+    max-width: 62% !important;
+    max-height: 72% !important;
     
   }
   .postit{
