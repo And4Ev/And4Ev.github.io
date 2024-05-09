@@ -305,9 +305,7 @@ p.textdoc {
 
 @media only screen and (max-width: 408px){
   .container {
-    position: absolute;
-    top: 14%;
-    left: 10% !important;
+    box-sizing: border-box;
     
   }
   .document {
@@ -332,7 +330,7 @@ p.textdoc {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: -2rem;
+    top: -40rem;
     left: 4rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
@@ -349,6 +347,6 @@ p.textdoc {
     width: 20px;
   }
   #sidebar.active {
-    top: 2rem;
+    top: 40rem;
   }
 }
