@@ -350,4 +350,13 @@ p.textdoc {
   #sidebar.active {
     top: 40rem;
   }
+  .boxes img{
+    width: 350px;
+    height: 200px;
+  }
+  .content-cv {
+    text-align: center;
+    width: 350;
+    height: auto;
+  }
 }
