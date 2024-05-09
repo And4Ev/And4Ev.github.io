@@ -311,7 +311,7 @@ p.textdoc {
 /*----responsive mobile---*/
 @media only screen and (max-width: 600px){
   .container {
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-left: -20px;
     position: absolute;
     height: -webkit-fill-available;
@@ -323,7 +323,32 @@ p.textdoc {
     width: -webkit-fill-available;
   }
   .keyboard{
-    margin-left: -30px;
+    max-width: 50% !important;
+    left: 2% !important;
+  }
+  .row{
+    max-width: 30% !important;
+    height: 44px !important;
+    margin-left: 5.4rem !important;
+  }
+  kbd{
+    font-size: 1rem !important;
+    height: 42px !important;
+  }
+  .toppage.document {
+    max-width: 45% !important;
+    max-height: 70% !important;
+    ;
+  }
+  .hidden.document {
+    max-width: 45% !important;
+    max-height: 70% !important;
+    
+  }
+  .postit{
+    width: 130px !important;
+    left: 23% !important;
+    height: 108px !important;
   }
   #sidebar {
     display: flex;
@@ -331,7 +356,7 @@ p.textdoc {
     text-align: center;
     position: fixed;
     top: -5rem;
-    
+    left: -9rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
