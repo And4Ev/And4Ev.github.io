@@ -141,6 +141,7 @@ kbd[data-key=enter] {
   font-size: 2rem;
   color: #999;
   margin-left: 1rem;
+  text-decoration: underline;
 }
 
 .document {
@@ -356,7 +357,7 @@ p.textdoc {
     position: fixed;
     top: -5rem;
     left: -9rem;
-    background: #e9e8e6;
+    background: #999;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
     
