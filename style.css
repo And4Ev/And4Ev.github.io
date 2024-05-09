@@ -317,6 +317,11 @@ p.textdoc {
     height: -webkit-fill-available;
     width: -webkit-fill-available;
   }
+  .contain{
+    position: absolute;
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+  }
   .keyboard{
     margin-left: -30px;
   }
@@ -326,7 +331,7 @@ p.textdoc {
     text-align: center;
     position: fixed;
     top: -5rem;
-    left: 7rem;
+    
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
@@ -343,7 +348,7 @@ p.textdoc {
   }
   #sidebar.active {
     top: 1rem;
-    left: 7rem;
+    left: 9rem;
   }
   .title-projects h1{
     margin-top: 7rem !important;
