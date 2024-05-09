@@ -306,7 +306,7 @@ p.textdoc {
 @media only screen and (max-width: 600px){
   
   .container {
-    position: relative;
+    position: absolute;
     min-height: 100vh;
     width: auto;
   }
