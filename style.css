@@ -352,12 +352,12 @@ p.textdoc {
     top: 1rem;
   }
   .boxes img{
-    width: 350px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
   }
   .content-cv {
     text-align: center;
-    width: 350;
+    width: 350px;
     height: auto;
   }
 }
