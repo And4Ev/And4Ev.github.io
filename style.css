@@ -274,7 +274,6 @@ p.textdoc {
   }
   #sidebar img {
     width: 30px;
-    filter: drop-shadow(2px 4px 6px black);
   }
   #sidebar.active {
     right: -95px;
@@ -337,12 +336,12 @@ p.textdoc {
     font-size: 2rem !important;
   }
   .toppage.document {
-    max-width: 65% !important;
+    max-width: 67% !important;
     max-height: 73% !important;
     
   }
   .hidden.document {
-    max-width: 65% !important;
+    max-width: 67% !important;
     max-height: 73% !important;
     
   }
