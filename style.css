@@ -274,7 +274,7 @@ p.textdoc {
   }
   #sidebar img {
     width: 30px;
-    filter: drop-shadow();
+    filter: drop-shadow(2px 4px 6px black);
   }
   #sidebar.active {
     right: -95px;
@@ -371,7 +371,7 @@ p.textdoc {
   }
   #sidebar img {
     width: 30px;
-    filter: drop-shadow();
+    filter: drop-shadow(2px 4px 6px black);
   }
   #sidebar.active {
     top: -5rem;
