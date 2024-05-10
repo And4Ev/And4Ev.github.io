@@ -274,6 +274,7 @@ p.textdoc {
   }
   #sidebar img {
     width: 30px;
+    filter: drop-shadow();
   }
   #sidebar.active {
     right: -95px;
@@ -312,7 +313,7 @@ p.textdoc {
 /*----responsive mobile---*/
 @media only screen and (max-width: 600px){
   .container {
-    margin-top: 6rem;
+    margin-top: 5rem;
     margin-left: -20px;
     position: absolute;
     height: -webkit-fill-available;
@@ -336,13 +337,13 @@ p.textdoc {
     font-size: 2rem !important;
   }
   .toppage.document {
-    max-width: 62% !important;
-    max-height: 72% !important;
+    max-width: 65% !important;
+    max-height: 73% !important;
     
   }
   .hidden.document {
-    max-width: 62% !important;
-    max-height: 72% !important;
+    max-width: 65% !important;
+    max-height: 73% !important;
     
   }
   .postit{
@@ -357,7 +358,7 @@ p.textdoc {
     position: fixed;
     top: 1rem;
     left: 3rem;
-    background: #999;
+    background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
     
@@ -370,6 +371,7 @@ p.textdoc {
   }
   #sidebar img {
     width: 30px;
+    filter: drop-shadow();
   }
   #sidebar.active {
     top: -5rem;
