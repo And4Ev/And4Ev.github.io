@@ -364,26 +364,7 @@ p.textdoc {
     margin-top: -14rem;
     margin-left: 4rem;
   }
-  .skills{
-    margin-left: 2rem;
-  }
-  .skill-1{
-    color: #fff;
-    background-color: tomato;
-    padding: 5px;
-    border-radius: 5px;
-    translate: translateX(-30px) translateY(-20px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) skewX(0deg) skewY(0deg) translateZ(0px);
-  }
-  .skill-2{
-    background-color: green;
-    padding: 5px;
-    border-radius: 5px;
-  }
-  .skill-3{
-    background-color: purple;
-    padding: 5px;
-    border-radius: 5px;
-  }
+  
   .btn-download{
     text-align: center;
     margin-bottom: 5rem;
@@ -436,8 +417,8 @@ p.textdoc {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: 1rem;
-    left: 3rem;
+    top: -5rem;
+    left: -9rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
@@ -454,22 +435,15 @@ p.textdoc {
     filter: drop-shadow(2px 4px 6px black);
   }
   #sidebar.active {
-    top: -5rem;
-    left: -9rem;
+    top: 1rem;
+    left: 3rem;
   }
   .title-projects h1{
     margin-top: 7rem !important;
   }
   /* section: about me */
  .content-cv{
-  margin-left: 4rem;
-  margin-right: 8rem;
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: row;
-  gap: 20px;
-  overflow: visible;
-  position: relative;
+  
  }
  .content-cv span{
   background-color: tomato;
@@ -479,21 +453,13 @@ p.textdoc {
   
  }
  .right-text h1{
-  margin-top: 4rem;
+  margin-top: 1rem;
   text-align: center;
   color: #7ef24d;
  }
   .right-text p{
     text-align: center;
-      margin-top: 2rem;
-      
-      display: flex;
-      flex: 1 0 0px;
-      flex-flow: column;
-      gap: 10px;
-      height: min-content;
-      overflow: visible;
-      position: relative;
+      margin-top: 1rem;
       
   }
   .card {
@@ -517,9 +483,9 @@ p.textdoc {
     rotate: -8deg;  
   }
   .card-front {
+    margin-top: -14rem;
+    margin-left: 2rem;
     rotate: 2deg;
-    margin-top: 4rem;
-    margin-left: 4rem;
   }
 
   .btn-download{
