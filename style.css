@@ -237,6 +237,7 @@ p.textdoc {
   }
   button{
     font-family: "Inter", sans-serif;
+    
     font-weight: 600;
     background-color: #f0f0f0;
     text-align: center;
@@ -246,6 +247,10 @@ p.textdoc {
   .btn-download{
     text-align: center;
     margin: 3rem 0 5rem 0;
+  }
+  .btn-download a{
+    text-decoration: none;
+    color: #0a0a0a;
   }
 /* --Projects--*/
 .title-projects h1{
@@ -410,8 +415,8 @@ p.textdoc {
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: 1rem;
-    left: 3rem;
+    top: -5rem;
+    left: -9rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
@@ -428,17 +433,17 @@ p.textdoc {
     filter: drop-shadow(2px 4px 6px black);
   }
   #sidebar.active {
-    top: -5rem;
-    left: -9rem;
+    top: 1rem;
+    left: 3rem;
   }
   
   /* section: about me Responsive */
   .content {
     display: contents;
-    justify-content: center;
    }
-   .card {
-    margin-top: 2rem;
+  .cards{
+    margin-top: 7rem;
+    margin-left: 4rem;
   }
   .card-front {
     rotate: 2deg;
