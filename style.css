@@ -2,14 +2,14 @@
 @import url(https://fonts.googleapis.com/css?family=Special+Elite);
 @import url(https://fonts.googleapis.com/css?family=Reenie+Beanie);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Special+Elite&display=swap);
 
 body {
   background-color: #111;
   background-image: linear-gradient(45deg, rgba(34, 34, 34, 0.667), rgba(34, 34, 34, 0.334)), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/49914/grit-fs8.png);
 }
-
-
+/* --KEYBOARD-- */
 .keyboard {
   position: absolute;
   top: 32%;
@@ -25,7 +25,6 @@ body {
   background-image: radial-gradient(#111, #222);
   padding: 0.25rem;
 }
-
 .row {
   height: 62px;
   display: flex;
@@ -33,7 +32,6 @@ body {
   padding-top: 2px;
   margin-bottom: 2px;
 }
-
 kbd {
   border-radius: 3px;
   box-sizing: border-box;
@@ -60,7 +58,6 @@ kbd {
   transition: transform 100ms;
   outline: 0;
 }
-
 kbd::before {
   content: "";
   position: absolute;
@@ -73,7 +70,6 @@ kbd::before {
   border-right: 1px solid transparent;
   border-bottom: 1px solid transparent;
 }
-
 kbd::before {
   border-left-color: #b2afa8;
   border-right-color: #b2afa8;
@@ -81,19 +77,16 @@ kbd::before {
   box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(to right, #e9e8e6, #c9c9c9 5%, transparent 40%, transparent 60%, #c9c9c9 95%, #e9e8e6);
 }
-
 kbd:active,
 kbd.pressed {
   transform: scale(0.96, 0.96) translate(0, 3px);
 }
-
 kbd[data-key]::after {
   position: relative;
   z-index: 1;
   content: attr(data-key);
   text-transform: capitalize;
 }
-
 kbd[data-key=enter] {
   background-color: #7f8384;
   border-color: #575a5a;
@@ -101,7 +94,6 @@ kbd[data-key=enter] {
   border-bottom-color: #393b3b;
   box-shadow: 0 -0.125em 0 -0.063em #393b3b, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
 }
-
 kbd[data-key=enter]:after {
   font-size: 0.725em;
   top: 0;
@@ -110,7 +102,6 @@ kbd[data-key=enter]:after {
   line-height: 31.2px;
   position: absolute;
 }
-
 kbd[data-key=enter]::before {
   border-left-color: #454848;
   border-right-color: #454848;
@@ -118,31 +109,30 @@ kbd[data-key=enter]::before {
   box-shadow: 0 4px 4px -3px rgba(0, 0, 0, 0.15);
   background-image: linear-gradient(to right, #7f8384, #636363 5%, transparent 40%, transparent 60%, #636363 95%, #7f8384);
 }
-
 kbd[data-key=enter] {
   width: 90px;
 }
+/* -- POSTIT -- */
 .postit {
   font-size: .9em;
   position: absolute;
-  padding: 20px 15px;
-  top: 63%;
+  padding: 20px 10px;
+  top: 62%;
   left: 37%;
   background: #f7e78c;
-  width: 150px;
-  height: 150px;
+  width: 132px;
+  height: 120px;
   z-index: -1;
-  transform: rotate(-10deg);
+  transform: rotate(-15deg);
   box-shadow: 4px 0.2em 2px 0em #454544, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
 }
-
 #message {
   font-family: 'Reenie Beanie', cursive;
   font-size: 2rem;
   color: #999;
   margin-left: 1rem;
 }
-
+/* -- Papers -- */
 .document {
   background-color: #fff;
   position: absolute;
@@ -150,24 +140,21 @@ kbd[data-key=enter] {
   left: 12%;
   box-shadow: -1px 1px 7px rgba(0, 0, 0, .6);
 }
-
 .toppage.document {
   width: 420px;
   height: 520px;
   z-index: -2;
   transform: rotate(-1deg);
 }
-
 p.textdoc {
   margin-top: 50px;
   margin-left: 4rem;
-  font-family: 'Reenie Beanie', cursive;
+  font-weight: 200;
+  font-style: normal;
+  font-family: "Special Elite", system-ui;
   font-size: 1.5rem;
-  padding: 5px;
-  
-  color: #56575a;
-  background: linear-gradient(to right, #ffe138cc 25%, transparent 80%);
-  
+  color: #0a0a0a;
+  border-bottom: 1px solid tomato;
 }
 .hidden.document {
   width: 420px;
@@ -175,20 +162,92 @@ p.textdoc {
   z-index: -3;
   transform: rotate(3deg);
 }
-.content-cv {
-  margin-bottom: 2rem;
-}
-.content-cv h1 {
-  color: #fff;
+/* section: about me */
+.content {
   font-family: "Inter", sans-serif;
   font-weight: 200;
-}
-.content-cv p {
-  font-family: "Inter", sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
-  color: #999;
-}
+  color: #dcd6d6;
+  margin-left: 4rem;
+  margin-right: 8rem;
+ }
+ .content h2{
+    margin-top: 4rem;
+    margin-left: 2rem;
+    color: #deca74;
+  }
+ .content-top{
+  display: flex;
+  flex: 0 0 auto;
+  flex-flow: row;
+  gap: 20px;
+  overflow: visible;
+  position: relative;
+ }
+.card {
+    margin-top: 5rem;
+    position: relative;
+    width: 200px;
+    height: 240px;
+    aspect-ratio: 1;
+    border: 8px solid #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+.image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    }
+  .card-back {
+    rotate: -8deg;  
+  }
+  .card-front {
+    rotate: 2deg;
+    margin-top: -14rem;
+    margin-left: 4rem;
+  }
+  .right-text p{
+    text-align: justify;
+    margin: 2rem;    
+  }
+  /* cards experience */
+  .tarjetas-exp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tarjeta{
+    background-color: #f5eaaa;
+    color: #403d3d;
+    width: 300px;
+    height: 220px;
+    padding: 0 10px;
+    border-radius: 5px;
+    
+  }
+  .tarjeta:hover{
+    transform: rotate(2deg);
+  }
+  .tarjeta h4{
+    font-size: 20px;
+  }
+  button{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px 20px;
+    color: #141413;
+   }
+  .btn-download{
+    text-align: center;
+    margin: 3rem 0 5rem 0;
+  }
+/* --Projects--*/
 .title-projects h1{
   margin-top: 2rem;
   text-align: center;
@@ -204,30 +263,24 @@ p.textdoc {
   justify-content: center;
   gap: 3rem;
 }
-
 .boxes:hover> :not(:hover) {
   opacity: 0.4;
 }
-
 .box {
   transition: opacity 0.6s ease;
 }
-
 .box.uno img {
   width: 400px;
   height: 250px;
 }
-
 .box.dos img {
   width: 400px;
   height: 250px;
 }
-
 .box.tres img {
   width: 400px;
   height: 250px;
 }
-
 .box.cuatro img {
   width: 400px;
   height: 250px;
@@ -239,17 +292,18 @@ p.textdoc {
   color: #999;
   text-align: center;
 }
-
 /*----responsive desktop---*/
-@media only screen and (min-width: 601px){
+
+  @media only screen and (min-width: 601px){
+  /*----container home sin sidebar---*/
   .container {
     position: absolute;
     top: 5%;
     left: 18%;
     width: 80%;
     height: 90%;
-    color: #999;
   }
+  /*----Sidebar---*/
   #sidebar {
     position: fixed;
     top: 1rem;
@@ -265,7 +319,7 @@ p.textdoc {
     padding-left: 0;
     text-align: center;
   }
-  ul li {
+  #sidebar ul li {
     color: #636363;
     padding: 15px 0;
     list-style: none;
@@ -293,7 +347,7 @@ p.textdoc {
     color: #2c2a2a;
     padding: 7px;
     width: max-content;
-    background: #e9e8e6;
+    background: #f7e78c;
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: .7rem;
@@ -303,72 +357,8 @@ p.textdoc {
   .icono:hover::before {
   --scale: 1;
   }
- /* section: about me */
- .content-cv{
-  margin-left: 4rem;
-  margin-right: 8rem;
-  display: flex;
-  flex: 0 0 auto;
-  flex-flow: row;
-  gap: 20px;
-  overflow: visible;
-  position: relative;
- }
- .content-cv span{
-  background-color: tomato;
-  color: #fff;
-  font-weight: 600;
-  padding: 0 5px;
+  /* about me desktop*/
   
- }
- .right-text h1{
-  margin-top: 4rem;
-  text-align: center;
-  color: #7ef24d;
- }
-  .right-text p{
-    text-align: center;
-      margin-top: 2rem;
-      
-      display: flex;
-      flex: 1 0 0px;
-      flex-flow: column;
-      gap: 10px;
-      height: min-content;
-      overflow: visible;
-      position: relative;
-      
-  }
-  .card {
-    margin-top: 5rem;
-    position: relative;
-    width: 200px;
-    height: 240px;
-    aspect-ratio: 1;
-    border: 8px solid #fff;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      
-    }
-  .card-back {
-    rotate: -8deg;  
-  }
-  .card-front {
-    rotate: 2deg;
-    margin-top: -14rem;
-    margin-left: 4rem;
-  }
-  
-  .btn-download{
-    text-align: center;
-    margin-bottom: 5rem;
-  }
 }
 
 /*----responsive mobile---*/
@@ -400,7 +390,9 @@ p.textdoc {
   .toppage.document {
     max-width: 67% !important;
     max-height: 73% !important;
-    
+  }
+  p.textdoc {
+    font-size: 1rem;
   }
   .hidden.document {
     max-width: 67% !important;
@@ -411,14 +403,15 @@ p.textdoc {
     width: 130px !important;
     left: 23% !important;
     height: 108px !important;
+    font-size: .7em;
   }
   #sidebar {
     display: flex;
     justify-content: center;
     text-align: center;
     position: fixed;
-    top: -5rem;
-    left: -9rem;
+    top: 1rem;
+    left: 3rem;
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
@@ -435,61 +428,45 @@ p.textdoc {
     filter: drop-shadow(2px 4px 6px black);
   }
   #sidebar.active {
-    top: 1rem;
-    left: 3rem;
+    top: -5rem;
+    left: -9rem;
   }
-  .title-projects h1{
-    margin-top: 7rem !important;
-  }
-  /* section: about me */
- .content-cv{
   
- }
- .content-cv span{
-  background-color: tomato;
-  color: #fff;
-  font-weight: 600;
-  padding: 0 5px;
-  
- }
- .right-text h1{
-  margin-top: 1rem;
-  text-align: center;
-  color: #7ef24d;
- }
-  .right-text p{
-    text-align: center;
-      margin-top: 1rem;
-      
-  }
-  .card {
+  /* section: about me Responsive */
+  .content {
+    display: contents;
+    justify-content: center;
+   }
+   .card {
     margin-top: 2rem;
-    position: relative;
-    width: 200px;
-    height: 240px;
-    aspect-ratio: 1;
-    border: 8px solid #fff;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  .image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      
-    }
-  .card-back {
-    rotate: -8deg;  
   }
   .card-front {
+    rotate: 2deg;
     margin-top: -14rem;
     margin-left: 2rem;
-    rotate: 2deg;
   }
-
-  .btn-download{
-    text-align: center;
-    margin-bottom: 3rem;
+   .content h2{
+      margin-top: 2rem;
+      margin-left: .5rem;
+    }
+   .right-text p{
+    text-align: left;
+    margin: 0 0 0 10px;    
+  }
+    /* cards experience */
+    .tarjetas-exp{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .tarjeta h4{
+      font-size: 18px;
+    }
+  
+  /* projects responsive */
+  .title-projects h1{
+    margin-top: 7rem !important;
   }
 }
