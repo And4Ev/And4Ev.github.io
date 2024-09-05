@@ -393,14 +393,11 @@ p.textdoc {
     font-size: 2rem !important;
   }
   .toppage.document {
-    max-width: 67% !important;
+    max-width: 77% !important;
     max-height: 73% !important;
   }
-  p.textdoc {
-    font-size: 1rem;
-  }
   .hidden.document {
-    max-width: 67% !important;
+    max-width: 80% !important;
     max-height: 73% !important;
     
   }
@@ -420,8 +417,10 @@ p.textdoc {
     background: #e9e8e6;
     box-shadow: 4px 0.2em 2px 0em #a6a29a, 0 0.125em 0 -0.063em rgba(0, 0, 0, 0.5);
     transition: all 500ms step-end;
-    
     z-index: 2;
+  }
+  #sidebar ul{
+    padding-left: 15px;
   }
   #sidebar li{
     display: inline-block;
