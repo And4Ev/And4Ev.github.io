@@ -306,6 +306,7 @@ p.textdoc {
   gap: 5rem;
 }
 .panel.asociacion{
+  margin: 4rem .2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -314,6 +315,9 @@ p.textdoc {
 }
 .figure-desktop{
   align-content: center;
+}
+.asociacion img{
+  max-width: 500px;
 }
 /*----responsive desktop---*/
 
