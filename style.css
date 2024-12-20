@@ -291,6 +291,10 @@ p.textdoc {
   width: 400px;
   height: 250px;
 }
+.box.cinco img {
+  width: 400px;
+  height: 250px;
+}
 .text p{
   font-family: "Inter", sans-serif;
   font-weight: 100;
