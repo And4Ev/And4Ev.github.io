@@ -1,3 +1,32 @@
+// Función para cargar la cabecera y el footer
+function loadLayout() {
+    const headerHTML = `
+        <nav>
+            <a href="#hero" class="nav-logo">Andrea <span>Aranda</span></a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experiencia</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Formación</a></li>
+                <li><a href="#contact">Contacto</a></li>
+             </ul>
+        </nav>
+    `;
+    
+    const footerHTML = `
+        <footer>
+            <span class="footer-copy">© 2025 Andrea Aranda · Desarrolladora web</span>
+            <a href="#hero" class="footer-back">↑ Volver arriba</a>
+        </footer>
+    `;
+
+    document.getElementById('header-placeholder').innerHTML = headerHTML;
+    document.getElementById('footer-placeholder').innerHTML = footerHTML;
+}
+
+// Ejecutar cuando cargue el DOM
+document.addEventListener('DOMContentLoaded', loadLayout);
+
 const canvas=document.getElementById('skill-canvas'),ctx=canvas.getContext('2d');
 const skills=[
   {label:'JavaScript',r:40},{label:'Node.js',r:32},{label:'Express',r:27},
