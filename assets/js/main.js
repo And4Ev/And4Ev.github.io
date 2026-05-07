@@ -23,24 +23,6 @@ function loadLayout() {
     document.getElementById('header-placeholder').innerHTML = headerHTML;
     document.getElementById('footer-placeholder').innerHTML = footerHTML;
 }
-// cursor lapiz
-const pencil = document.getElementById('cursorPencil');
-const trail = document.getElementById('cursorTrail');
-let mx=0,my=0,tx=0,ty=0;
-document.addEventListener('mousemove',e=>{
-  mx=e.clientX;my=e.clientY;
-  pencil.style.left=mx+'px';pencil.style.top=my+'px';
-});
-function animTrail(){
-  tx+=(mx-tx)*.18;ty+=(my-ty)*.18;
-  trail.style.left=tx+'px';trail.style.top=ty+'px';
-  requestAnimationFrame(animTrail);
-}
-animTrail();
-document.querySelectorAll('a,button,.card').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{pencil.classList.add('hovering')});
-  el.addEventListener('mouseleave',()=>{pencil.classList.remove('hovering')});
-});
 
 // Ejecutar cuando cargue el DOM
 document.addEventListener('DOMContentLoaded', loadLayout);
@@ -128,4 +110,23 @@ document.querySelectorAll('.exp-item,.skill-card,.project-card,.edu-card,.projec
   el.style.opacity='0';el.style.transform='translateY(20px)';
   el.style.transition='opacity .6s cubic-bezier(.22,1,.36,1),transform .6s cubic-bezier(.22,1,.36,1)';
   io.observe(el);
+});
+
+// cursor lapiz
+const pencil = document.getElementById('cursorPencil');
+const trail = document.getElementById('cursorTrail');
+let mx=0,my=0,tx=0,ty=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  pencil.style.left=mx+'px';pencil.style.top=my+'px';
+});
+function animTrail(){
+  tx+=(mx-tx)*.18;ty+=(my-ty)*.18;
+  trail.style.left=tx+'px';trail.style.top=ty+'px';
+  requestAnimationFrame(animTrail);
+}
+animTrail();
+document.querySelectorAll('a,button,.card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{pencil.classList.add('hovering')});
+  el.addEventListener('mouseleave',()=>{pencil.classList.remove('hovering')});
 });
