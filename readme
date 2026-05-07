@@ -1,6 +1,6 @@
 # Inicializar el proyecto (solo la primera vez):
         git init
-        git remote add origin https://github.com/tu_usuario/tu_usuario.github.io.git
+        git remote add origin https://github.com/usuario/usuario.github.io.git
 
 ## El ciclo diario de cambios:
 
@@ -12,3 +12,8 @@
 
     git push origin main: subir cambios a la nube Git
 
+# mas corto
+    git commit -am "fix rápido" && git push
+
+# crear alias (git up será el alias)
+    git config --global alias.up '!git add -A && git commit -m "update" && git push'
