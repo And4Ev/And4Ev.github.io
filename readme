@@ -1,0 +1,14 @@
+# Inicializar el proyecto (solo la primera vez):
+        git init
+        git remote add origin https://github.com/tu_usuario/tu_usuario.github.io.git
+
+## El ciclo diario de cambios:
+
+    git status: ver archivos que he modificado.
+
+    git add .
+
+    git commit -m "descripción"
+
+    git push origin main: subir cambios a la nube Git
+
