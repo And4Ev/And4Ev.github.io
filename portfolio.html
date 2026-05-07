@@ -32,6 +32,18 @@ nav, footer {
     </style>
 </head>
 <body>
+    <div class="cursor-pencil" id="cursorPencil">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Pencil body -->
+          <polygon points="6,24 8,18 20,6 22,8 10,20" fill="#c8965a" opacity="0.9"/>
+          <!-- Pencil tip -->
+          <polygon points="6,24 8,18 10,20" fill="#e8e0d0"/>
+          <!-- Pencil eraser end -->
+          <rect x="19.5" y="4.5" width="3.5" height="4" rx=".5" transform="rotate(45 21.25 6.5)" fill="#8a5e32"/>
+          <!-- Pencil highlight -->
+          <line x1="9" y1="19" x2="20" y2="8" stroke="rgba(232,224,208,0.25)" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+      </div>
     <nav>
         <a href="index.html" class="nav-logo">Andrea <span>Aranda</span></a>
         <ul class="nav-links">
@@ -52,5 +64,25 @@ nav, footer {
     <footer>
         <span class="footer-copy">© 2025 Andrea Aranda · Desarrolladora web</span>
     </footer>
+    <script>
+        // Pencil cursor
+const pencil = document.getElementById('cursorPencil');
+const trail = document.getElementById('cursorTrail');
+let mx=0,my=0,tx=0,ty=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  pencil.style.left=mx+'px';pencil.style.top=my+'px';
+});
+function animTrail(){
+  tx+=(mx-tx)*.18;ty+=(my-ty)*.18;
+  trail.style.left=tx+'px';trail.style.top=ty+'px';
+  requestAnimationFrame(animTrail);
+}
+animTrail();
+document.querySelectorAll('a,button,.card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{pencil.classList.add('hovering')});
+  el.addEventListener('mouseleave',()=>{pencil.classList.remove('hovering')});
+});
+    </script>
 </body>
 </html>
