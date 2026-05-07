@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        html, body {
+    height: 100%; 
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; 
+    background-color: #a07340;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav, footer {
+    flex-shrink: 0; 
+}
+    </style>
 </head>
 <body>
     <nav>
@@ -18,13 +43,14 @@
          </ul>
     </nav>
 
-    <section style="background-color: #a07340; min-height:100vh;display:flex;align-items:center;justify-content:center; overflow: hidden;">
+    <section class="main-content">
         <h2> <em style="color:#2a2620 ;">Trabajando en esta sección...</em></h2>
         <img style="width: 150px;" src="assets/img/lapiz.png" alt="dibujo lapiz con cara graciosa">
        
     </section>
 
-    <div id="footer-placeholder"></div>
-    <script src="assets/js/main.js"></script>
+    <footer>
+        <span class="footer-copy">© 2025 Andrea Aranda · Desarrolladora web</span>
+    </footer>
 </body>
 </html>
