@@ -148,7 +148,7 @@ h1 em{
 }
 .hero-desc{
     color:var(--text2);
-    font-size:13px;
+    font-size:14px;
     line-height:2;
     max-width:380px;
     margin-bottom:2.5rem;
@@ -253,7 +253,7 @@ h2 em{
 }
 .skill-desc{
     color:var(--text2);
-    font-size:13px;
+    font-size:14px;
     font-weight:300;
     margin-bottom:.75rem;
 }
@@ -265,7 +265,7 @@ h2 em{
 }
 .tag{
     font-family:var(--mono);
-    font-size:10px;
+    font-size:11px;
     padding:.2rem .55rem;
     border:1px solid var(--border);
     color:var(--text2);
@@ -326,7 +326,7 @@ h2 em{
 }
 .exp-bullets li{
     color:var(--text2);
-    font-size:13px;
+    font-size:14px;
     font-weight:300;
     padding-left:1.2rem;
     position:relative;
@@ -423,7 +423,7 @@ h2 em{
 }
 .project-desc{
     color:var(--text2);
-    font-size:13px;
+    font-size:14px;
     font-weight:300;
     line-height:1.8;
     flex:1;
@@ -536,7 +536,7 @@ h2 em{
 }
 .contact-sub{
     color:var(--text2);
-    font-size:13px;
+    font-size:14px;
     font-weight:300;
     margin-bottom:3rem;
 }
