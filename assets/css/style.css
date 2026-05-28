@@ -32,6 +32,7 @@ body{
     cursor: none;
 }
 a,button,.card,.filter-btn{cursor:none}
+.link {color:var(--accent)}
 /* CUSTOM CURSOR */
 .cursor-pencil{
     position:fixed;
