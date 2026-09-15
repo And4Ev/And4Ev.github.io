@@ -134,7 +134,7 @@ section {
 
 /* HERO */
 #hero {
-    min-height: 80vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 8rem;
@@ -146,7 +146,7 @@ section {
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
+    gap: 3rem;
     align-items: center;
     width: 100%;
     max-width: 1100px;
@@ -210,7 +210,44 @@ h1 em {
 }
 
 /* animation skills */
+.skillBar {
+    
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 30px;
+    background: var(--border);
+    margin: 10px auto;
+    border-radius: 8px;
+}
 
+.skill {
+
+    border-radius: 8px;
+    height: 30px;
+    background-color: var(--accent);
+    width: 100%;
+    animation: Animate-HTML 6s;
+}
+
+@keyframes Animate-HTML {
+    from {
+        width: 10px;
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.skill-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: none;
+    color: #fff;
+    font-size: 14px;
+}
 
 /* SECTION HEADER */
 .section-header {
@@ -486,7 +523,8 @@ h2 em {
     padding-top: .75rem;
     border-top: 1px solid var(--border);
 }
-.project-stack .tag{
+
+.project-stack .tag {
     font-family: var(--mono);
     font-size: 11px;
     padding: .2rem .65rem;
@@ -495,6 +533,7 @@ h2 em {
     letter-spacing: .05em;
     transition: all .2s;
 }
+
 .project-link {
     display: inline-flex;
     align-items: center;
