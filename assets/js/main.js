@@ -4,7 +4,7 @@ function loadLayout() {
         <nav>
             <a href="index.html" class="nav-logo">Andrea <span>Aranda</span></a>
             <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills">Stack tecnológico</a></li>
                 <li><a href="#experience">Experiencia</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#education">Formación</a></li>
